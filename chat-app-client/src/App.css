@@ -1,0 +1,94 @@
+
+.usercard:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    width: 30%;
+    background-color: #f3f4ff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .chat-list {
+    margin-top: 1rem;
+    overflow-y: auto;
+  }
+  
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .chat-item:hover {
+    background-color: #ddd;
+  }
+  
+  .chat-item.active {
+    border: 2px solid #6c63ff;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chat-info {
+    flex-grow: 1;
+  }
+  
+  .chat-info h3 {
+    margin: 0;
+  }
+  
+  .chat-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    max-width: 60%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .sent {
+    background: #6c63ff;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .received {
+    background: #ddd;
+    align-self: flex-start;
+  }
+  
+  .message span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+  }

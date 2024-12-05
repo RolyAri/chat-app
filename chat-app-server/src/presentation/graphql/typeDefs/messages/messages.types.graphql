@@ -1,0 +1,9 @@
+scalar Date
+
+type Message {
+  id: ID!
+  text: String!
+  receiverId: Int!
+  senderId: Int!
+  createdAt: Date!
+}
