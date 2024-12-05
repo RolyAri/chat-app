@@ -1,7 +1,5 @@
-const { PubSub } = require("graphql-subscriptions");
+const { pubSub } = require('../pubsub');
 const messageController = require("../../../../controllers/messages");
-
-const pubSub = new PubSub()
 
 const MESSAGE_ADDED = "MESSAGE_ADDED";
 
@@ -13,4 +11,11 @@ const Mutation = {
   },
 };
 
+const Subscription = {
+  messageAdded: {
+    subscribe: () => pubSub.asyncIterableIterator(MESSAGE_ADDED),
+  },
+};
+
 exports.Mutation = Mutation;
+exports.Subscription = Subscription

@@ -1,16 +1,13 @@
 const { ApolloServer } = require("@apollo/server");
-const typeDefs = require("./typedefs");
-const resolvers = require("./resolvers");
 const jwt = require("jsonwebtoken");
 const cors = require('cors');
 const { createServer } = require('http');
 const express = require('express')
 const { WebSocketServer } = require('ws');
 const { useServer } = require('graphql-ws/lib/use/ws');
-const { makeExecutableSchema } = require('@graphql-tools/schema');
 const { ApolloServerPluginDrainHttpServer } = require("@apollo/server/plugin/drainHttpServer");
 const { expressMiddleware } = require("@apollo/server/express4");
-/* const schema = require('./src/presentation/graphql/schema'); */
+const schema = require('./src/presentation/graphql/schema');
 
 const app = express();
 
@@ -22,7 +19,6 @@ const context = async ({ req }) => {
     }
   }
 
-  const schema = makeExecutableSchema({typeDefs, resolvers})
 const httpServer = createServer(app);
 
 const wsServer = new WebSocketServer({
