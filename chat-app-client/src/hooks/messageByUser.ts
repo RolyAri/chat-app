@@ -12,15 +12,3 @@ query MessageByUser($receiverId: Int!) {
 }
 `
 
-/* const useGetMessagesByUser = (variables: {receiverId: any}, setMessage: any) => {
-  const getMessagesByUser = useQuery(GET_MESSAGES_BY_USER,{
-    variables: variables, onCompleted(data) {
-      setMessage((prev:any) => [...prev,data.messageByUser])
-    },
-  })
-  return getMessagesByUser
-}
- */
-
-// export default useGetMessagesByUser
-

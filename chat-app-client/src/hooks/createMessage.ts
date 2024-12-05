@@ -11,12 +11,3 @@ mutation CreateMessage($receiverId: Int!, $text: String!) {
   }
 }
 `
-
-
-  
-
-/* const useCreateMessage = () => {
-    return useMutation(CREATE_MESSAGE);
-  };
-
-export default useCreateMessage */

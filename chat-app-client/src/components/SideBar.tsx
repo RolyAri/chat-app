@@ -9,9 +9,8 @@ interface SideBarProps {
 }
 
 const SideBar: React.FC<SideBarProps> = ({setIsUserLogged}) => {
-  const {data, loading, error} = useGetAllUsers()
+  const {data, loading} = useGetAllUsers()
   if(loading) return (<Typography variant='h6'>Cargando chats</Typography>)
-  if(error) console.log(error)
     return (
       <Box className="sidebar">
       <Stack direction="row" justifyContent="space-between">
@@ -30,26 +29,6 @@ const SideBar: React.FC<SideBarProps> = ({setIsUserLogged}) => {
       
     </Box>
   )
-  /* return (
-    <Box
-    bgcolor = "#f7f7f7"
-    height="100vh"
-    width="250px"
-    padding="10px"
-    >
-      <Stack direction="row" justifyContent="space-between">
-        <Typography variant="h6">Chat</Typography>
-        <LogoutIcon onClick={()=>{
-          localStorage.removeItem('jwt')
-          setIsUserLogged(false)
-        }}/>
-      </Stack>
-      <Divider />
-      {data.users.map((item:any) => (
-        <UserCard key={item.id} {...item}/>
-      ))}
-    </Box>
-  ); */
 };
 
 export default SideBar;
