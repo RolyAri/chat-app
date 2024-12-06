@@ -50,4 +50,24 @@ Este proyecto implementa una aplicación de chat en tiempo real con autenticaci�
    ```bash 
    cd chat-app-client
    yarn dev
-  
+## Uso
+
+1. **Regístrate:** Crea una cuenta con tu nombre de usuario y contraseña.
+2. **Inicia sesión:** Obtén un token JWT que te autentica en la aplicación.
+3. **Accede a una sala de chat** Dirigete sobre un contacto y accede al chat.
+4. **Envía mensajes** a otros usuarios en la sala.
+5. **Recibe mensajes** cuando otro usuario te envíe un nuevo mensaje.
+
+## Contribución
+
+Si deseas contribuir al proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu feature o corrección de error.
+3. Realiza tus cambios y crea un commit con un mensaje descriptivo.
+4. Envía un pull request a la rama principal del repositorio.
+
+
+## Contacto
+
+[Roly Ari] - [rolyari09@gmail.com]
