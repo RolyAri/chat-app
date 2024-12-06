@@ -1,3 +1,6 @@
+
+![Video Chat App](https://github.com/user-attachments/assets/fcaa267f-6fac-43e0-b14c-76e0e5c6f960)
+
 # Chat en tiempo real con GraphQL, React y Prisma
 
 Este proyecto implementa una aplicación de chat en tiempo real con autenticación JWT, utilizando las siguientes tecnologías:
