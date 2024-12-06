@@ -16,9 +16,8 @@ Este proyecto implementa una aplicación de chat en tiempo real con autenticaci�
 ## Características principales
 
 * **Autenticación de usuarios con JWT:**  Login seguro con generación y validación de tokens.
-* Creación de salas de chat.
+* Creación de usuarios y salas de chat.
 * Envío y recepción de mensajes en tiempo real mediante WebSockets.
-* Notificaciones de nuevos mensajes.
 * Interfaz de usuario intuitiva y responsive.
 
 ## Instalación
@@ -26,3 +25,29 @@ Este proyecto implementa una aplicación de chat en tiempo real con autenticaci�
 1. **Clona el repositorio:**
    ```bash
    git clone https://github.com/RolyAri/chat-app.git
+2. **Instala las dependencias del servidor:**
+   ```bash
+   cd chat-app-server
+   yarn install
+
+3. **Instala las dependencias del cliente:**
+   ```bash
+   cd chat-app-client
+   yarn install
+
+4. **Configura las variables de entorno:**
+     * **Crea un archivo .env en la carpeta server y define las siguientes variables:.**
+   ```bash
+   DATABASE_URL="mysql://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos"
+   JWT_SECRET="tu_clave_secreta_para_jwt"
+5. **Ejecuta las migraciones de Prisma:**
+   ```bash
+   npx prisma migrate dev
+6. **Inicia el servidor:**
+   ```bash
+   yarn dev
+7. **Inicia el servidor:**
+   ```bash 
+   cd chat-app-client
+   yarn dev
+  
